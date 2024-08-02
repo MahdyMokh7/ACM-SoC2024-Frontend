@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Forms</title>
+        <meta name="charset" content="UTF-8">
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <article id="Survey">
+                <form action="https://theuselessweb.site/ducksarethebest.com/">
+                    <section id="Personal Information">
+                        <h3>Write Your Personal Information:</h3>
+
+                        <label for="First-Name">Name: </label>
+                        <input type="text" id="First-Name" name="information" required><br><br>
+
+                        <label for="Last-Name">LastName: </label>
+                        <input type="text" id="Last-Name" name="information" required><br><br>
+
+                        <label for="Birth-Date">BirthDate: </label>
+                        <input type="date" id="Birth-Date" name="information" required><br><br>
+
+                        <label for="Phone-Number">PhoneNumber: </label>
+                        <input type="tel" id="Phone-Number" name="information" pattern="0[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="0912-123-1234" required><br><br>
+
+                        <label for="Email">Email: </label>
+                        <input type="email" id="Email" name="information" required><br><br>
+
+                        <label for="Site-Link">SiteLink: </label>
+                        <input type="url" id="Site-Link" name="information"><br><br>
+                    </section>
+
+                    <section id="Food-selection">
+                        <h3>Select Your Favorite Food:</h3>
+        
+                        <input type="radio" id="pizza" name="food" value="pizza" required>
+                        <label for="pizza">Pizza</label>
+                    
+                        <input type="radio" id="kebab" name="food" value="kebab">
+                        <label for="kebab">Kebab</label>
+                    
+                        <input type="radio" id="ghorme-sabzi" name="food" value="ghorme-sabzi">
+                        <label for="ghorme-sabzi">Ghorme Sabzi</label>
+
+                        <input type="radio" id="sushi" name="food" value="sushi">
+                        <label for="sushi">Sushi</label>
+    
+                        <br>
+                        <br> 
+                    </section>
+
+                    <section id="Food-Eaten">
+                        <h3>Select The Foods You Ate In The Restruant:</h3>
+                    
+                        <input type="checkbox" id="pizza" name="food" value="pizza">
+                        <label for="pizza">Pizza</label>
+
+                        <input type="checkbox" id="burger" name="food" value="burger">
+                        <label for="burger">Burger</label>
+
+                        <input type="checkbox" id="sushi" name="food" value="sushi">
+                        <label for="sushi">Sushi</label>
+
+                        <input type="checkbox" id="fried-chicken" name="food" value="fried-chicken">
+                        <label for="fried-chicken">Fried Chicken</label>
+
+                        <input type="checkbox" id="soup" name="food" value="soup">
+                        <label for="soup">Soup</label>
+
+                        <input type="checkbox" id="salad" name="food" value="salad">
+                        <label for="salad">Salad</label>
+
+                        <br><br>
+                    </section>
+
+                    <section id="Branch-Selection">
+                        <h3>Select the Branch of Restaurant You Ate At:</h3>
+
+                        <label for="branch">Branch:</label>
+                        <select id="branch" name="branch" required>
+                            <option value="ferdos">Ferdos</option>
+                            <option value="vanak">Vanak</option>
+                            <option value="amirabad">Amirabad</option>
+                            <option value="tehranpars">Tehranpars</option>
+                        </select>
+    
+                        <br><br>
+                    </section>
+
+                    <section>
+                        <h3>What Food Do You Want to Add to the Menu?</h3>
+                    
+                        <label for="new-food">Food Suggestion:</label>
+                        <input type="text" id="new-food" name="new-food" placeholder="Enter food item" required>
+                        
+                        <br><br>
+                        <h3>Any Other Suggestions?</h3>
+                        
+                        <!-- <label for="suggestions">Suggestions:</label> -->
+                        <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Enter your suggestions here"></textarea>
+                        
+                        <br><br><br>
+                    </section>
+
+                    <section id="Submit">
+                        <input type="submit" value="Submit Form">
+                    </section>
+
+                </form>
+
+
+            </article>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
