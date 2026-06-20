@@ -49,5 +49,4 @@ Every subfolder is a static site with no dependencies. Open the `index.html` fil
 
 ## About Me
 
-[Your name] — frontend developer in training, building toward [your goal, e.g. "a career in web development"].
-[LinkedIn] · [Portfolio site] · [Email]
+Mehdy Mokhtari — frontend developer in training, building toward a career in full-stack development"
