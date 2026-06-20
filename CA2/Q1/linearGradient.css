@@ -1,0 +1,76 @@
+:root {
+    --main-background-color1: #ee7752;
+    --main-background-color2: #e73c7e;
+    --main-background-color3: #23a6d5;
+    --main-background-color4: #23d5ab;
+    --main-font-size: 16px;
+
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, var(--main-background-color1), 
+                                var(--main-background-color2), 
+                                var(--main-background-color3), 
+                                var(--main-background-color4));
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-scope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#first-header {
+    margin: 10px 0;
+    font-size: 2.5rem !important;
+}
+
+.middle-content:nth-child(2) {
+    display: flex;
+    gap: 10px;
+    font-size: var(--main-font-size);
+    text-transform: uppercase;
+}
+
+.middle-content:nth-child(3) {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 18px; /* Increases the text size */
+    padding: 15px 30px; /* Adds space inside the button */
+    width: auto; /* Adjusts width automatically based on content */
+    height: auto; /* Adjusts height automatically based on content */
+    border-radius: 5px;
+}
+
+#description::before {
+    content: "————— "; /* Adds em dashes before the text */
+}
+
+#description::after {
+    content: " —————"; /* Adds em dashes after the text */
+}
+
+
+button:hover {
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #3498db; 
+    color: white; 
+}
+
+
+
+

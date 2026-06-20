@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hide overflowing text to create a clean effect */
+    font-family: Arial, sans-serif;
+}
+
+#animatedText {
+    font-size: 2rem;
+    white-space: nowrap; /* Prevents text from wrapping */
+    position: absolute; /* Allows for free movement */
+    transform: translateX(100%); /* Start off the right side */
+    animation: moveText 10s linear infinite; /* Create the moving animation */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%); /* Start off the right side of the viewport */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left, off the screen */
+    }
+}
+
